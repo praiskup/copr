@@ -57,7 +57,7 @@ setup(
                  "copr_messaging.tests.*")),
     include_package_data=True,
     zip_safe=False,
-    install_requires=["fedora_messaging"],
+    install_requires=__requires__,
     test_suite="copr_messaging.tests",
     entry_points={
         "fedora.messages": [
