@@ -1,4 +1,6 @@
 import logging
+
+
 from unittest import TestCase
 from requests import RequestException
 from copr_common.request import SafeRequest, RequestRetryError
