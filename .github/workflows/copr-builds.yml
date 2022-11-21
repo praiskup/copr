@@ -30,9 +30,9 @@ jobs:
       - id: check_packages
         name: Detecting changed sub-packages
         run: |
-          echo "packages<<EOF" >> $GITHUB_ENV
-          ./.github/copr-build-helpers/changed-packages >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          echo "packages<<EOF" >> $GITHUB_OUTPUT
+          ./.github/copr-build-helpers/changed-packages >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
   build:
     needs: check
